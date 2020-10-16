@@ -1,0 +1,14 @@
+aiohttp==3.6.3
+aiohttp-jinja2==1.2.0
+async-timeout==3.0.1
+asyncio==3.4.3
+asyncpg==0.21.0
+attrs==20.2.0
+chardet==3.0.4
+idna==2.10
+Jinja2==2.11.2
+MarkupSafe==1.1.1
+multidict==4.7.6
+Pillow==8.0.0
+pyzbar==0.1.8
+yarl==1.5.1

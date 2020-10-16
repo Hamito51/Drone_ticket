@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block title %}
+Tickets index
+{% endblock %}
+
+{% block content %}
+<h1>Tickets</h1>
+<p>
+  <ul>
+    {% for post in posts %}
+    <li>
+      <a href="/{{ post.ticket }}">{{ post.ticket }}</a> {{ post.qr }}
+    </li>
+    {% endfor %}
+  </ul>
+</p>
+<hr>
+<p>
+  <a href="/new">New</a> 
+</p>
+{% endblock %}

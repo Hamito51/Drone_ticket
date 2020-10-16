@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %}
+Post {{ ticket.qr }}
+{% endblock %}
+
+{% block content %}
+<div class="card" style="width: 18rem;">
+  <img src="/{{ ticket.ticket }}/image" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Ticket number: {{ ticket.ticket }}</h5>
+    <p class="card-text">Information from qr: {{ ticket.qr }}</p>
+    <a href="/" class="btn btn-primary">list of tickets</a>
+  </div>
+</div>
+{% endblock %}
